@@ -1,3 +1,84 @@
-p{
-    color: red;
+@font-face {
+    font-family: norse-bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+body{
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    border: 1px solid rebeccapurple;
+}
+
+.images-div{
+    border: 1px solid red;
+    position: relative;
+    box-sizing: border-box;
+    max-width: calc(50vw - 80px);
+    max-height: 100%;
+}
+
+.plant-div > img{
+    box-sizing: border-box;
+    position: relative;
+    object-fit: cover;
+    width: 500px;
+    height: 900px;
+}
+
+.logo-background-div{
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+    top: 200px;
+    width: 500px;
+    height: 130px;
+}
+
+.logo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-div > img{
+    top: 210px;
+    right: 260px;
+    width: 90px;
+    height: 110px;
+    position: absolute;
+}
+
+.logo-div > p{
+    font-family: norse-bold;
+    font-size: 90px;
+    color: white;
+    margin: 0;
+    margin-top: 20px;
+    position: absolute;
+    top: 210px;
+    right: 120px;
+}
+
+.photo-creds{
+    position: absolute;
+    top: 865px;
+    left: 130px;
+    color: white;
+}
+
+.text-div{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.text-div > p{
+    font-weight: 600;
+    font-size: 23px;
 }
