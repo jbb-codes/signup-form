@@ -3,19 +3,14 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
-body{
-    height: 100vh;
-}
-
 .container{
+    height: 100vh;
     display: flex;
     margin-left: 80px;
     margin-right: 80px;
-    border: 1px solid rebeccapurple;
 }
 
 .images-div{
-    border: 1px solid red;
     position: relative;
     box-sizing: border-box;
     max-width: calc(50vw - 80px);
@@ -66,19 +61,100 @@ body{
 
 .photo-creds{
     position: absolute;
-    top: 865px;
+    top: 850px;
     left: 130px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.photo-creds > a{
     color: white;
 }
 
 .text-div{
-    margin: 30px;
+    width: calc(50vw - 80px);
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 130px;
 }
 
 .text-div > p{
+    margin-left: 30px;
     font-weight: 600;
     font-size: 23px;
+}
+
+input,
+label,
+button{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    width: calc(50vw + 20px);
+    box-shadow: 5px 5px 10px grey;
+}
+
+.form-row{
+    display: flex;
+}
+
+.form-item{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-item > label{
+    display: block;
+    margin-bottom: 2px;
+    font-size: .8rem;
+}
+
+.form-item > input{
+    border-radius: 5px;
+    height: 30px;
+    border: 1px solid #E5E7EB;
+}
+
+input[type="password"]:invalid{
+    border: 1px solid red;
+}
+
+input:focus{
+    border: .5px solid lightblue;
+    box-shadow: 4px 4px 5px grey;
+}
+
+h2{
+    margin-left: 30px;
+}
+
+form > button{
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: #596D48;
+}
+
+#login-para{
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+
+#login-para > a{
+    text-decoration: none;
+    color: #596D48;
 }
